@@ -1,0 +1,43 @@
+.seat {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc; /* Viền của ghế */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .seat:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+  }
+  
+  .seatSold {
+    background-color: #ff4d4d; /* Màu đỏ khi ghế đã bán */
+    cursor: not-allowed;
+    color: white; /* Đổi chữ thành màu trắng khi ghế đã bán */
+  }
+  
+  .seatChoosing {
+    background-color: #4caf50; /* Màu xanh khi ghế đang được chọn */
+    cursor: pointer;
+    color: white; /* Đổi chữ thành màu trắng khi ghế đang chọn */
+  }
+  
+  .seatAvailable {
+    background-color: #ffffff; /* Màu trắng khi ghế còn trống */
+    border: 1px solid #ccc; /* Viền nhẹ cho ghế còn trống */
+    color: #000; /* Màu chữ đen */
+  }
+  
+  .seat-container {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép ghế tự động xuống hàng khi không đủ không gian */
+    gap: 10px; /* Khoảng cách giữa các ghế */
+    justify-content: start; /* Canh lề trái */
+  }
+  
